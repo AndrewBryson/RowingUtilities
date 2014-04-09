@@ -72,9 +72,12 @@ namespace RowingUtilities
         MasC = 70,
         IM3 = 80,
         J18 = 90,
+        J18A = 91,
         J17 = 100,
+        J17A = 101,
         Nov = 110,
         J16 = 120,
+        J16A = 121,
         MasD = 130,
         MasE = 140,
         MasF = 150,
@@ -82,9 +85,14 @@ namespace RowingUtilities
         MasH = 170,
         MasI = 180,
         J15 = 190,
+        J15A = 191,
         J14 = 200,
+        J14A = 201,
         J13 = 210,
+        J13A = 211,
         J12 = 220,
+        J12A = 221,
         J11 = 230,
+        J11A = 231
     }
 }

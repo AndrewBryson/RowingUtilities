@@ -12,31 +12,31 @@ namespace Driver
         static void Main(string[] args)
         {            
             HeadEventDraw draw = new HeadEventDraw();
-            draw.LoadFromFile(@"d:\crewexport.csv");
+            draw.LoadFromFile("crewexport.csv");
             
             // Sort the draw.
             draw.SortDraw();
 
             // Save it out to a new file.
-            draw.SaveToFile(@"d:\saved.csv");
+            draw.SaveToFile(@"saved.csv");
 
             // Or save it somewhere via a Stream by getting the draw as a string?
-            using (FileStream fsOut = new FileStream(@"d:\String-saved.csv", FileMode.Create, FileAccess.Write))
-            {
-                using (StreamWriter sw = new StreamWriter(fsOut))
-                {
-                    sw.Write(draw.GetAsString());
-                }
-            }
+            //using (FileStream fsOut = new FileStream(@"d:\String-saved.csv", FileMode.Create, FileAccess.Write))
+            //{   
+            //    using (StreamWriter sw = new StreamWriter(fsOut))
+            //    {
+            //        sw.Write(draw.GetAsString());
+            //    }
+            //}
 
-            // Or save it somewhere via a Stream?
-            using (FileStream fsOut = new FileStream(@"d:\Stream-saved.csv", FileMode.Create, FileAccess.Write))
-            {
-                using (StreamWriter sw = new StreamWriter(fsOut))
-                {
-                    draw.SaveToStream(sw);
-                }
-            }
+            //// Or save it somewhere via a Stream?
+            //using (FileStream fsOut = new FileStream(@"d:\Stream-saved.csv", FileMode.Create, FileAccess.Write))
+            //{
+            //    using (StreamWriter sw = new StreamWriter(fsOut))
+            //    {
+            //        draw.SaveToStream(sw);
+            //    }
+            //}
         }
     }
 }
